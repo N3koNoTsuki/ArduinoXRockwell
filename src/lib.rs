@@ -97,16 +97,17 @@ mod neko_no_lib {
         }
     }
 
-    fn print_meteo_rust(meteo: &Meteo) {
-        println!("{:?}", meteo);
-
+    fn print_meteo_rust(meteo: &Meteo, debug: bool) {
+        if debug {
+            println!("{:?}", meteo);
+        }
         println!("{}", meteo);
     }
 
     #[pyfunction]
     #[pyo3(name = "print_meteo")]
-    fn print_meteo(meteo: PyRef<'_, Meteo>) {
-        print_meteo_rust(&meteo);
+    fn print_meteo(meteo: PyRef<'_, Meteo>, debug: bool) {
+        print_meteo_rust(&meteo, debug);
     }
 
     #[pyfunction]
@@ -121,6 +122,8 @@ mod neko_no_lib {
             temp: 25 as f64,
             location: a,
         };
-        print_meteo_rust(&b);
+        print_meteo_rust(&b, false);
+        println!("");
+        print_meteo_rust(&b, true);
     }
 }
