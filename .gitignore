@@ -1,5 +1,5 @@
-/target
-
+rust/target
+rust/dist
 # Byte-compiled / optimized / DLL files
 __pycache__/
 .pytest_cache/
