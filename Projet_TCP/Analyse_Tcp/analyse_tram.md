@@ -37,6 +37,10 @@ Côté Rockwell, la taille maximale lisible est de **484 bytes**.
 - Stocker les morceaux dans un buffer plus grand  
 - Reconstituer la trame complète  
 
+* En image :
+
+![Texte alternatif](img/Gros_Ard_Rock_Idea_1.png "Gros_Ard_Rock_Idea_1")
+![Texte alternatif](img/Gros_Ard_Rock_Idea_2.png "Gros_Ard_Rock_Idea_2")
 ---
 
 ## Une grosse trame envoyée Rockwell → Arduino
