@@ -83,7 +83,7 @@ Exemples :
 | Champ      | Valeur                 |
 |------------|------------------------|
 | Signature  | `4E 4B 50 31`            |
-| Taille     | `00 05`                  |
+| Taille     | `00 00 00 05`                  |
 | Données    | `48 45 4C 4C 4F`         |
 
 ### Trame finale :
